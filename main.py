@@ -9,6 +9,14 @@ data = r.text
 
 soup = BeautifulSoup (data, 'html.parser')
 
+zxc = soup.find_all('div', {
+    "class":"value"
+})
+
+
+print ("На данний момент в Україні спроживча інфляція становить")
+print(zxc[0].text)
+
 
 
 
